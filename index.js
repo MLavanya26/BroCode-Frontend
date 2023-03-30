@@ -2,8 +2,8 @@ const axios =require('axios')
 const express = require('express')
 const mongoose= require('mongoose')
 const user = require ('./data/user')
-const app = express()
-const port = 5000
+const app = express();
+const port = process.env.port || 5000
 
 const db="mongodb+srv://demo:demo@cluster0.4x59mpz.mongodb.net/mynodejsdb?retryWrites=true&w=majority"
 const connectDB =async()=>{
